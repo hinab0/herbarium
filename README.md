@@ -2,7 +2,7 @@
 
 A lightweight, responsive web application showcasing interactive CSS art and DOM manipulation. The project focuses on clean architecture, semantic markup, and modern CSS features.
 
-[👉 View Live Demo](https://github.com/hinab0/herbarium)
+[👉 View Live Demo](https://hinab0.github.io/herbarium/)
 
 ## ✨ Key Features
 *   **Theme Switcher:** Automatic adaptation to the user's system preferences (Light/Dark mode) using `@media (prefers-color-scheme: dark)`.
