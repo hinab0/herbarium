@@ -8,14 +8,16 @@
 </head>
 <body>
 
-  <!-- Навигация -->
-  <nav class="nav">
-    <button class="nav__btn" data-target="card-1">№ 1</button>
-    <button class="nav__btn nav__btn--active" data-target="card-2">№ 2</button>
-  </nav>
+<!-- Навигация -->
+<nav class="nav">
+  <!-- Добавляем активный класс сюда -->
+  <button class="nav__btn nav__btn--active" data-target="card-1">№ 1</button>
+  <!-- А отсюда убираем -->
+  <button class="nav__btn" data-target="card-2">№ 2</button> 
+</nav>
 
   <!-- Карточка 1: Patience -->
-  <div class="card" id="card-1">
+  <div class="card card--active" id="card-1">
     <div class="card__header" title="Нажмите для переключения страницы">
       <div class="card__date">
         <span class="card__date-line">December</span>
@@ -86,8 +88,8 @@
     </div>
   </div>
 
-  <!-- Карточка 2: Stillness -->
-  <div class="card card--active" id="card-2">
+  <!-- Карточка 2: Stillnes -->
+  <div class="card" id="card-2">
     <div class="card__header" title="Нажмите для переключения страницы">
       <div class="card__date">
         <span class="card__date-line">March</span>
