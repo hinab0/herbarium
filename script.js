@@ -19,7 +19,23 @@ navButtons.forEach(btn => {
 document.querySelectorAll('.card__header, .card__flower').forEach(zone => {
   zone.addEventListener('click', (e) => {
     const currentCard = e.currentTarget.closest('.card');
-    const nextTargetId = currentCard.id === 'card-1' ? 'card-2' : 'card-1';
+    
+    // 1. Создаем список из всех ID, которые есть на странице (['card-1', 'card-2', 'card-3'])
+    const cardIds = Array.from(cards).map(card => card.id);
+    
+    // 2. Узнаем, какой порядковый номер у текущей карточки
+    const currentIndex = cardIds.indexOf(currentCard.id);
+    
+    // 3. Вычисляем следующую карточку
+    let nextIndex = currentIndex + 1;
+    
+    // Если мы дошли до последней карточки, возвращаемся к самой первой (к нулю)
+    if (nextIndex >= cardIds.length) {
+      nextIndex = 0;
+    }
+    
+    // Получаем ID следующей карточки и переключаем
+    const nextTargetId = cardIds[nextIndex];
     switchCard(nextTargetId);
   });
 });

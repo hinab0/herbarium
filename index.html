@@ -10,10 +10,10 @@
 
 <!-- Навигация -->
 <nav class="nav">
-  <!-- Добавляем активный класс сюда -->
   <button class="nav__btn nav__btn--active" data-target="card-1">№ 1</button>
-  <!-- А отсюда убираем -->
-  <button class="nav__btn" data-target="card-2">№ 2</button> 
+  <button class="nav__btn" data-target="card-2">№ 2</button>
+  <!-- Добавляем новую кнопку -->
+  <button class="nav__btn" data-target="card-3">№ 3</button>
 </nav>
 
   <!-- Карточка 1: Patience -->
@@ -153,6 +153,53 @@
       </svg>
     </div>
   </div>
+
+  <!-- Карточка 3: Resilience -->
+<div class="card" id="card-3">
+  <div class="card__header" title="Нажмите для переключения страницы">
+    <div class="card__date">
+      <span class="card__date-line">October</span>
+      <span class="card__date-line">5th 2026</span>
+    </div>
+    <div class="card__divider-v"></div>
+    <div class="card__word">Resilience</div>
+  </div>
+
+  <div class="card__divider-h"></div>
+
+  <div class="card__body">
+    <p class="card__text">
+      even the deepest roots<br>
+      were once small seeds.<br>
+      storms do not break them,<br>
+      they only teach them<br>
+      to hold on.
+    </p>
+  </div>
+
+  <div class="card__tape card__tape--left"></div>
+  <div class="card__tape card__tape--right"></div>
+
+  <div class="card__flower" title="Нажмите для переключения страницы">
+    <!-- Цветок в терракотовых и теплых тонах -->
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="flower-svg">
+      <g opacity="0.85">
+        <ellipse cx="100" cy="55" rx="10" ry="28" fill="#c25953" transform="rotate(0 100 100)"/>
+        <ellipse cx="100" cy="55" rx="10" ry="28" fill="#e07a70" transform="rotate(45 100 100)"/>
+        <ellipse cx="100" cy="55" rx="10" ry="28" fill="#9e3f3a" transform="rotate(90 100 100)"/>
+        <ellipse cx="100" cy="55" rx="10" ry="28" fill="#c25953" transform="rotate(135 100 100)"/>
+        <ellipse cx="100" cy="55" rx="10" ry="28" fill="#e07a70" transform="rotate(180 100 100)"/>
+        <ellipse cx="100" cy="55" rx="10" ry="28" fill="#9e3f3a" transform="rotate(225 100 100)"/>
+        <ellipse cx="100" cy="55" rx="10" ry="28" fill="#c25953" transform="rotate(270 100 100)"/>
+        <ellipse cx="100" cy="55" rx="10" ry="28" fill="#e07a70" transform="rotate(315 100 100)"/>
+      </g>
+      <path d="M 100 130 Q 110 160 105 180" stroke="#7a5a48" stroke-width="2" fill="none" opacity="0.8"/>
+      <ellipse cx="112" cy="150" rx="5" ry="12" fill="#8c6a5a" transform="rotate(-30 112 150)" opacity="0.85"/>
+      <circle cx="100" cy="100" r="14" fill="#3d2a1e" opacity="0.9"/>
+      <circle cx="100" cy="100" r="8" fill="#291b12" opacity="0.95"/>
+    </svg>
+  </div>
+</div>
 
   <script src="script.js"></script>
 </body>
